@@ -14,7 +14,7 @@ body{
 }
 
 #section1{
-    background-color: blue;
+    background-image: url("../Documents/fond1.jpg");
 }
 #section2{
     background-color: red;
@@ -91,6 +91,7 @@ a{
 /*              Accueil           */
 
 #blocdescription{
+    height: 70vh;
     margin-top: 65px;
     margin-left:6px;
     border: 12px solid rgb(113, 128, 147);
