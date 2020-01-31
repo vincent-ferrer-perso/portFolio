@@ -7,15 +7,16 @@
         <meta name="description" content="Bienvenu sur le site de Vincent Ferrer, étudiant en IUT Informatique">
         <title> Ferrer Vincent</title>
         <link href="CSS/feuillecss1.css" rel="stylesheet" type="text/css" title="css1"/>
-        <script src="jquery-3.4.1.min.js"></script>
+        <script src="JS/jquery-3.4.1.min.js"></script>
+        <script src="JS/script.js"></script>
         <script src="JS/swapcss.js"></script>
     </head>
     <body>
         <nav class="navaccueil">
             <ul>
-                <li><a title="LienAccueil" class="navspecific" href="#section1" onclick="">Accueil</a></li>
-                <li><a title="LienFormulaire" class="navspecific" href="#section2">Formulaire</a></li>
-                <li><a title="LienUtiles" class="navspecific" id="LienUtile" href="#section3">Contact</a></li>
+                <li><a title="LienAccueil" class="navspecific" href="#section1" onclick="goToS1()">Accueil</a></li>
+                <li><a title="LienFormulaire" class="navspecific" href="#section2" onclick="goToS2()">Formulaire</a></li>
+                <li><a title="LienUtiles" class="navspecific" id="LienUtile" href="#section3" onclick="goToS3()">Contact</a></li>
             </ul>
         </nav>
         <section class="section" id="section1">
