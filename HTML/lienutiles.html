@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Vincent Ferrer</title>
+		<meta charset="utf-8"/>
+        <meta name="keywords" content="web DUT informatique portofolio">
+        <link href="../CSS/feuillecss1.css" rel="stylesheet" type="text/css" title="css1"/>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Bienvenu sur le site de Vincent Ferrer, IUT Informatique">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../Documents/logoIUT.png">
+        <link rel="icon" href="../Documents/logoIUT.ico">
+        <link href="../CSS/feuillecss1.css" rel="stylesheet" type="text/css" title="css1"/>
+        <link href="../CSS/feuillecss2.css" rel="alternate stylesheet" type="text/css" title="css2"/>
+        <script src="../JS/swapcss.js"></script>
+    </head>
+
+    <body>
+        <nav class="navaccueil">
+            <ul>
+                <li><a title="LienAccueil" class="navspecific" href="../index.html">Accueil</a></li>
+                <li><a title="LienFormulaire" class="navspecific" href="formulaire.html">Formulaire</a></li>
+                <li><a title="LienUtiles" class="navspecific" id="LienUtiles" href="lienutiles.html">Lien Utiles</a></li>
+            </ul>
+        </nav>
+        <div id="LienTelechargements">
+            <h1 class="titreTelechargements">Téléchargements</h1>
+            <ul>
+                <li><strong><a class="sub-sub-menuderoulant-item" href="../Documents/DossierCom.zip" download>Dossier de Communication M1105</a></strong></li>  <!-- mettre fichier en archive pour pouvoir le telecharger -->
+                <li><strong><a class="sub-sub-menuderoulant-item" href="../Documents/CodeSource.zip" download>Code source du site</a></strong></li>
+            </ul>
+        </div>
+        <div id="LienSitesWeb">
+            <h1 class="titre">Sites Web</h1>
+            <ul>
+                <li><b>Site de Thomas Fillols: </b><em><a title="LienSite" href="https://thomasfillols.alwaysdata.net">https://thomasfillols.alwaysdata.net</a></em></li>
+                <li><b>Site de Julien Godest: </b><em><a title="LienSite" href="https://juliengodest-portfolio.alwaysdata.net">https://juliengodest-portfolio.alwaysdata.net</a></em></li>
+            </ul>
+        </div>
+        <div id="Contact">
+            <h1 class="titre">Contact</h1>
+            <p>
+                <strong>Nom Prénom: </strong>Ferrer Vincent<br>
+                <strong>Adresse mail: </strong><a href="mailto:vincent.ferrer@etu.univ-amu.fr"><em>vincent.ferrer@etu.univ-amu.fr</em></a><br>
+                <strong>Adresse: </strong>17 impasse du Falabren<br>
+                <strong>Ville: </strong>Salon-de-Provence    
+            </p>
+        </div>
+        <div id="footermedia">
+            <ul>
+                <li>
+                    <figure>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer"><img class="cssvalid" src="../Documents/cssvalid.png" alt=""></a>
+                    </figure>
+                </li>
+                <li><a id="VersCSS1" class="changeCSS" href="javascript:;" onclick="setActiveStyleSheet('css1'); location.reload(); return false;">Changer style</a></li>
+                <li><a id="VersCSS2" class="changeCSS" href="javascript:;" onclick="setActiveStyleSheet('css2'); location.reload(); return false;">Changer style</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

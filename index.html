@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title> Ferrer Vincent</title>
+		<meta charset="utf-8"/>
+        <meta name="keywords" content="web DUT informatique portofolio">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Bienvenu sur le site de Vincent Ferrer, étudiant en IUT Informatique">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="Documents/logoIUT.png">
+        <link rel="icon" href="Documents/logoIUT.ico">
+        <link href="CSS/feuillecss1.css" rel="stylesheet" type="text/css" title="css1"/>
+        <link href="CSS/feuillecss2.css" rel="alternate stylesheet" type="text/css" title="css2"/>
+        <script src="JS/swapcss.js"></script>
+    </head>
+    <body>
+        <nav class="navaccueil">
+            <ul>
+                <li><a title="LienAccueil" class="navspecific" href="index.html">Accueil</a></li>
+                <li><a title="LienFormulaire" class="navspecific" href="HTML/formulaire.html">Formulaire</a></li>
+                <li>
+                    <ul class="menuderoulant">
+                        <li class="menuderoulant-item">
+                            <a href="#" id="nommenuderoulant">Liens Utiles</a>
+                            <ol class="menuderoulant sub-menuderoulant">
+                                <li class="sub-menuderoulant-item">
+                                    <a class="sub-menuderoulant-a" href="#">Téléchargements</a>
+                                    <ul class="menuderoulant sub-menuderoulant sub-sub-menuderoulant">
+                                        <li><a class="sub-sub-menuderoulant-item" href="Documents/DossierCom.zip" download>Dossier de Communication M1105</a></li>  <!-- mettre fichier en archive pour pouvoir le telecharger -->
+                                        <li><a class="sub-sub-menuderoulant-item" href="Documents/CodeSource.zip" download>Code source du site</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menuderoulant-item">
+                                    <a class="sub-menuderoulant-a" href="#">Site web</a>
+                                    <ul class="menuderoulant sub-menuderoulant sub-sub-menuderoulant">
+                                        <li><em><a class="sub-sub-menuderoulant-item" title="LienSiteThomasFillols" href="https://thomasfillols.alwaysdata.net">Thomas Fillols</a></em></li>                  
+                                        <li><em><a class="sub-sub-menuderoulant-item" title="LienGoogle" href="https://juliengodest-portfolio.alwaysdata.net">Julien Godest</a></em></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menuderoulant-item">
+                                    <a class="sub-menuderoulant-a" href="#">CSS</a>
+                                    <ul class="menuderoulant sub-menuderoulant sub-sub-menuderoulant">
+                                        <li><a href="javascript:;" onclick="setActiveStyleSheet('css1'); location.reload(); return false;">style par defaut</a></li>                  
+                                        <li><a href="javascript:;" onclick="setActiveStyleSheet('css2'); location.reload(); return false;">style alternatif</a></li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li><a title="LienUtiles" class="navspecific" id="LienUtiles" href="HTML/lienutiles.html">Lien Utiles</a></li>
+            </ul>
+        </nav>
+        <div class="blocprincipal">
+            <h1 class="titre">Qui suis-je ?</h1>
+            <div id=blocdescription>
+                <figure>
+                    <img id="photoprofil" src="Documents/profil.png" alt="">
+                </figure>
+                <div id="description">
+                    Je me présente, Vincent Ferrer, étudiant de première année du DUT Informatique du Site Aix-en-Provence de l'academie d'AIx-Marseille. Je suis né le 3 juin 1999 dans le 12ème arrondissement de Marseille et vit aujourd'hui à Salon-de-Provence.<br>
+                    <div id="CompetenceDiplome">
+                        <h2 class="titre2">Diplômes</h2>
+                        <strong>Novembre 2017 </strong> Obtention du Permis de conduire<br>
+                        <strong>Juin 2018 </strong>Obtention du Baccalauréat Scientifique<br>
+                        <h2 class="titre2">Compétences</h2>
+                        <strong>Anglais: </strong>Niveau B1<br>
+                        <strong>Informatique: </strong>
+                        <p id="Info">
+                            Programmation: C++<br>
+                            Développement web: HTML, CSS
+                        </p>
+                        <strong>Bureautique: </strong>Word, Excel, PowerPoint
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div id="footermedia">
+            <ul>
+                <li>
+                    <figure>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer"><img class="cssvalid" src="Documents/cssvalid.png" alt=""></a>
+                    </figure>
+                </li>
+                <li><a id="VersCSS1" class="changeCSS" href="javascript:;" onclick="setActiveStyleSheet('css1'); location.reload(); return false;">Changer style</a></li>
+                <li><a id="VersCSS2" class="changeCSS" href="javascript:;" onclick="setActiveStyleSheet('css2'); location.reload(); return false;">Changer style</a></li>
+            </ul>
+        </div>
+        <footer>
+                <div id=footleft>
+                    <figure>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer"><img class="cssvalid" src="Documents/cssvalid.png" alt=""></a>
+                    </figure>
+                    <p class="intitule">
+                        <b>Nom Prénom:</b><br>
+                        <b>Adresse mail:</b><br>
+                    </p>
+                    <p class="expression">
+                        Ferrer Vincent<br>
+                        <a href="mailto:vincent.ferrer@etu.univ-amu.fr"><em>vincent.ferrer@etu.univ-amu.fr</em></a><br>
+                    </p>
+                </div>
+                <div id=footright>
+                    <p class="intitule">
+                        <b>Adresse:</b><br>
+                        <b>Ville:</b>
+                    </p>
+                    <p class="expression">
+                        17 impasse du Falabren<br>
+                        Salon-de-Provence
+                    </p>
+                </div>
+        </footer>
+    </body>
+</html>

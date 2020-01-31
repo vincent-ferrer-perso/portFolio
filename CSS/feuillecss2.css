@@ -1,0 +1,400 @@
+/*              Toutes les pages            */
+*:focus {
+    outline:  none;
+}
+
+.blocprincipal{
+    width: 100%;
+    position: absolute;
+    left: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.blocprincipal .titre{
+    position: absolute;
+    color: rgb(47, 54, 64);
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Menu */
+.navaccueil ul{
+    padding-left: 0px;
+    margin-top:0px;
+}
+.navaccueil{
+    background-color: rgb(0, 168, 255);
+    position:fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 140px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    z-index: 1;
+}
+
+.navspecific:hover{
+    background-color:rgb(47, 54, 64);
+    color: rgb(0, 168, 255);
+}
+
+.navspecific{
+    float: left;
+    text-align: center;
+    width: 140px;
+    color: white;
+}
+
+/* menu deroulant */
+#LienUtiles{
+    display: none;
+}
+
+
+.menuderoulant{
+    position: fixed;
+    top: 44px;
+    left:0;
+    text-align: left;
+}
+
+#nommenuderoulant{
+    padding-left: 21px;
+}
+
+.menuderoulant a{
+    color: white;
+    text-decoration: none;
+}
+
+.sub-menuderoulant {
+    display: none; /* Masque la sous-liste */
+}
+
+.menuderoulant-item:hover .sub-menuderoulant{
+    position: relative;
+    top: 0;
+    display:block; /* Affiche sous-liste au survol du conteneur */
+}
+
+.menuderoulant-item .sub-menuderoulant .sub-sub-menuderoulant{
+    display:none; /* masque sous-sous-liste au survol du conteneur */
+}
+
+
+.sub-menuderoulant-item:hover .sub-sub-menuderoulant{
+    position: relative;
+    display: block; /* Affiche sous-sous-liste au survol du conteneur */
+    margin-left: 20px;
+}
+
+
+.menuderoulant *:hover #nommenuderoulant{
+    color: rgb(0, 168, 255);
+}
+.menuderoulant *:hover{
+    background-color:rgb(47, 54, 64);
+    color: rgb(0, 168, 255);
+}
+
+/* fin menu deroulant */
+
+/* fin Menu */
+
+footer{
+    z-index: 2;
+    background-color: rgb(0, 168, 255);
+    height: 65px;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+footer a{
+    color: black;
+}
+
+#footleft figure{
+    margin-left: 25px;
+    float: left;
+}
+
+#footleft .intitule{
+    text-align: right;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#footleft .expression{
+    display: inline-block;
+}
+
+#footright{
+    position:fixed;
+    height: 65px;
+    right: 0;
+    bottom: 0;
+}
+#footright .intitule{
+    padding-right: 10px;
+    display: inline-block;
+    text-align: right;
+}
+#footright .expression{
+    float: right;
+    padding-right: 10px;
+}
+
+#footermedia{
+    display: none;
+}
+
+/*              Accueil           */
+
+#blocdescription{
+    position: absolute;
+    margin-top: 65px;
+    border: 12px solid rgb(64, 115, 158);
+    -webkit-border-end: 0px;
+    min-width: 140px;
+    width: 60%;
+    text-align: justify;
+    overflow-y: scroll;
+    padding-left:5px;
+}
+
+#blocdescription::-webkit-scrollbar{
+    width: 12px;
+    background-color: rgb(64, 115, 158);
+}
+
+#blocdescription::-webkit-scrollbar-thumb {
+    background-color:rgb(47, 54, 64);
+}
+
+#description{
+    position: relative;
+    padding-right: 3%;
+    margin-left: 20px;
+    height: 61vh;
+}
+
+#CompetenceDiplome{
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+#CompetenceDiplome .titre2{
+    margin-bottom: 5px;
+}
+
+#CompetenceDiplome #Info{
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 2px;
+}
+
+#photoprofil {
+    position: relative;
+    float: left;
+    right: 15px;
+    border-radius: 15px;
+    width: 19%;
+    min-width: 50px;
+    max-width: 100px;
+}
+/*              Formulaire            */
+
+.formulaire{
+    margin-top: 65px;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(113, 128, 147);
+    width : 60%;
+    border-radius: 55px;
+    padding: 20px;
+}
+
+.atformulaire{
+    margin-bottom: 15px;
+    border:0px;
+    border-radius: 0px;
+    background: none;
+    border-bottom: solid 1px white;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+::-ms-input-placeholder{        /* Microsoft Edge */
+    color: white;
+}
+
+
+input::-moz-placeholder{        /* Mozilla Firefox */
+    color: white;
+    opacity: 1;
+}
+
+textarea::-moz-placeholder{     /* Mozilla Firefox */
+    color: white;
+    opacity: 1;
+}
+
+
+
+#message{
+    border:solid 1px white;
+    padding: 10px;
+    border-radius: 13px;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 25px;
+    max-height: 120px;
+}
+
+.genre{
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+
+#soumettre{
+    cursor: pointer;
+    height:85px;
+    width:85px;
+    border-radius:50%;
+	background:white;
+	box-shadow:2px 2px 8px rgb(170, 170, 170);
+	font:bold 13px sans-serif;
+    color:rgb(85, 85, 85);
+}
+
+#soumettre:active{
+    background:rgb(85, 85, 85);
+    color:white;
+}
+
+
+@media screen and (max-width: 680px), screen and (max-height: 557px){
+
+.blocprincipal{
+    margin-top:5px;
+    left:0;
+}
+
+
+    /* Menu */
+.navaccueil{
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100vw;
+}
+
+.navaccueil ul{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+#LienUtiles{
+    display: block;
+}
+
+.navspecific{
+    width: 95px;
+    padding: 3px;
+}
+
+.menuderoulant-item{
+    display: none;
+}
+
+    /* fin Menu */
+
+footer{
+    display: none;
+}
+
+#footermedia{
+    position: fixed;
+    display: flex;
+    bottom:0;
+    right: 0;
+}
+
+#footermedia ul{
+    margin: 0;
+}
+
+.changeCSS{
+    width: 95px;
+    font-family: sans-serif;
+    background-color: rgb(0, 168, 255);
+    color: white;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px 0px 0px 10px;
+    transition:all 0.5s;
+}
+
+.changeCSS:hover{
+    padding-right: 15px;
+}
+
+#VersCSS2{
+    display:none;
+}
+
+#footermedia li:hover .changeCSS{
+    background-color:rgb(47, 54, 64);
+    color: rgb(0, 168, 255);
+}
+
+.cssvalid{
+    position: fixed;
+    bottom:0;
+    left: 0;
+}
+
+
+/*              Accueil           */
+#blocdescription figure{
+    margin-left:20px;
+}
+
+#description{
+    margin-left: 5px;
+}
+
+/*              Lien Utiles            */
+
+.titreTelechargements{
+    margin-top: 30px;
+}
+
+#LienTelechargements a, #LienSitesWeb a, #Contact  a{
+    color: black;
+}
+
+#LienTelechargements ul, #LienSitesWeb ul{
+    padding-left: 0px;
+}
+
+#Contact p{
+    margin-bottom: 40px;
+}
+
+} /* fin media */
