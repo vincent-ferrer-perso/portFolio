@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8"/>
-        <meta name="keywords" content="web DUT informatique portofolio">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Bienvenu sur le site de Vincent Ferrer, étudiant en IUT Informatique">
-        <title> Ferrer Vincent</title>
-        <link href="CSS/feuillecss1.css" rel="stylesheet" type="text/css" title="css1"/>
-        <script src="JS/jquery-3.4.1.min.js"></script>
-        <script src="JS/script.js"></script>
-        <script src="JS/swapcss.js"></script>
-    </head>
-    <body>
-        <nav class="navaccueil">
-            <ul>
-                <li><a title="LienAccueil" class="navspecific" href="#section1" onclick="goToS1()">Accueil</a></li>
-                <li><a title="LienFormulaire" class="navspecific" href="#section2" onclick="goToS2()">Formulaire</a></li>
-                <li><a title="LienUtiles" class="navspecific" id="LienUtile" href="#section3" onclick="goToS3()">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="section" id="section1">
-            <div class="blocprincipal">
-                <h1 class="titre">Qui suis-je ?</h1>
-                <div id=blocdescription>
-                    <figure>
-                        <img id="photoprofil" src="Documents/profil.png" alt="">
-                    </figure>
-                    <div id="description">
-                        Je me présente, Vincent Ferrer, étudiant de première année du DUT Informatique du Site Aix-en-Provence de l'academie d'AIx-Marseille. Je suis né le 3 juin 1999 dans le 12ème arrondissement de Marseille et vit aujourd'hui à Salon-de-Provence.<br>
-                        <div id="CompetenceDiplome">
-                            <h2 class="titre2">Diplômes</h2>
-                            <strong>Novembre 2017 </strong> Obtention du Permis de conduire<br>
-                            <strong>Juin 2018 </strong>Obtention du Baccalauréat Scientifique<br>
-                            <h2 class="titre2">Compétences</h2>
-                            <strong>Anglais: </strong>Niveau B1<br>
-                            <strong>Informatique: </strong>
-                            <p id="Info">
-                                Programmation: C++<br>
-                                Développement web: HTML, CSS
-                            </p>
-                            <strong>Bureautique: </strong>Word, Excel, PowerPoint
-                        </div>
-                    </div>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="web DUT informatique portofolio">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Bienvenu sur le site de Vincent Ferrer, étudiant en IUT Informatique">
+    <title> Ferrer Vincent</title>
+    <link href="CSS/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" title="css1"/>
+    <link href="CSS/feuillecss1.css" rel="stylesheet" type="text/css" title="css1"/>
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/swapcss.js"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a title="LienAccueil" class="navbar-brand" href="#section1" onclick="goToS1()">Accueil</a>
+    <a title="LienFormulaire" class="navbar-brand" href="#section2" onclick="goToS2()">Formulaire</a>
+    <a title="LienUtiles" class="navbar-brand" id="LienUtile" href="#section3" onclick="goToS3()">Contact</a>
+</nav>
+<body>
+<section class="section" id="section1">
+    <div class="blocprincipal">
+        <h1 class="titre">Qui suis-je ?</h1>
+        <div id=blocdescription class="bg-info">
+            <figure>
+                <img id="photoprofil" src="Documents/profil.png" alt="">
+            </figure>
+            <div id="description">
+                Je me présente, Vincent Ferrer, étudiant de première année du DUT Informatique du Site Aix-en-Provence de l'academie d'AIx-Marseille. Je suis né le 3 juin 1999 dans le 12ème arrondissement de Marseille et vit aujourd'hui à Salon-de-Provence.<br>
+                <div id="CompetenceDiplome">
+                    <h2 class="titre2">Diplômes</h2>
+                    <strong>Novembre 2017 </strong> Obtention du Permis de conduire<br>
+                    <strong>Juin 2018 </strong>Obtention du Baccalauréat Scientifique<br>
+                    <h2 class="titre2">Compétences</h2>
+                    <strong>Anglais: </strong>Niveau B1<br>
+                    <strong>Informatique: </strong>
+                    <p id="Info">
+                        Programmation: C++<br>
+                        Développement web: HTML, CSS
+                    </p>
+                    <strong>Bureautique: </strong>Word, Excel, PowerPoint
                 </div>
             </div>
-        </section>
-        <section class="section" id="section2">
-            <div class="blocprincipal">
-            <h1 class="titre" id="titreformulaire">Contactez-moi</h1>
-            <form method="POST" action="mailto:vincent.ferrer@etu.univ-amu.fr" class="formulaire">
-                <label for="nom">Nom : </label><br>
-                <input class="atformulaire" type="text" id="nom" required placeholder="Ex: Hambert" name="nom"><br>
-
-
-                <label for="prenom">Prénom : </label><br>
-                <input class="atformulaire" type="text" id="prenom" required placeholder="Ex: Leon" name="prenom"><br>
-
-
-                <label for="age">Age :</label><br>
-                <input class="atformulaire" type="number" id="age" min="0" required placeholder="Ex: 42" name="age"><br>
-
-
-                <label>Genre : </label><br>
-                <label for="man">Homme<input id="man" class="atformulaire" type="radio" name="genre" value="man"></label>
-                <label  for="woman">Femme<input id="woman" class="atformulaire" type="radio" name="genre" value="woman"></label><br>
-
-
-                <label for="message">Message: </label><br>
-                <textarea class="atformulaire" id="message" required placeholder="Ex: Tu peux ameliorer ton site en faisant..." name="message"></textarea><br>
-                <label for=soumettre><input id="soumettre" type="submit" value="Envoyer"></label>
-            </form>
         </div>
-        </section>
-        <section class="section" id="section3">
-            <div id="Contact">
-                <h1 class="titre">Contact</h1>
-                <p>
-                    <strong>Nom Prénom: </strong>Ferrer Vincent<br>
-                    <strong>Adresse mail: </strong><a href="mailto:vincent.ferrer@etu.univ-amu.fr"><em>vincent.ferrer@etu.univ-amu.fr</em></a><br>
-                    <strong>Adresse: </strong>17 impasse du Falabren<br>
-                    <strong>Ville: </strong>Salon-de-Provence
-                </p>
-            </div>
-        </section>
-    </body>
+    </div>
+</section>
+<section class="section" id="section2">
+    <div class="blocprincipal">
+        <h1 class="titre" id="titreformulaire">Contactez-moi</h1>
+        <form method="POST" action="mailto:vincent.ferrer@etu.univ-amu.fr" class="formulaire bg-info">
+            <label for="nom">Nom : </label><br>
+            <input class="atformulaire" type="text" id="nom" required placeholder="Ex: Hambert" name="nom"><br>
+
+
+            <label for="prenom">Prénom : </label><br>
+            <input class="atformulaire" type="text" id="prenom" required placeholder="Ex: Leon" name="prenom"><br>
+
+
+            <label for="age">Age :</label><br>
+            <input class="atformulaire" type="number" id="age" min="0" required placeholder="Ex: 42" name="age"><br>
+
+
+            <label>Genre : </label><br>
+            <label for="man">Homme<input id="man" class="atformulaire" type="radio" name="genre" value="man"></label>
+            <label  for="woman">Femme<input id="woman" class="atformulaire" type="radio" name="genre" value="woman"></label><br>
+
+
+            <label for="message">Message: </label><br>
+            <textarea class="atformulaire" id="message" required placeholder="Ex: Tu peux ameliorer ton site en faisant..." name="message"></textarea><br>
+            <label for=soumettre><input id="soumettre" type="submit" value="Envoyer"></label>
+        </form>
+    </div>
+</section>
+<section class="section" id="section3">
+    <div id="Contact">
+        <h1 class="titre">Contact</h1>
+        <p>
+            <strong>Nom Prénom: </strong>Ferrer Vincent<br>
+            <strong>Adresse mail: </strong><a href="mailto:vincent.ferrer@etu.univ-amu.fr"><em>vincent.ferrer@etu.univ-amu.fr</em></a><br>
+            <strong>Adresse: </strong>17 impasse du Falabren<br>
+            <strong>Ville: </strong>Salon-de-Provence
+        </p>
+    </div>
+</section>
+</body>
 </html>

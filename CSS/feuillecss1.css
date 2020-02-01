@@ -2,17 +2,15 @@
 
 body{
     background-color: rgba(107, 110, 122, 0.384);
-    height: 100vh;
-    width: 100vw;
-}
-
-*:focus {
-    outline:  none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .section{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 #section1{
@@ -30,14 +28,13 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .blocprincipal .titre{
     color: rgb(47, 54, 64);
     display: flex;
     justify-content: center;
-    top: 0;
 }
 
 li{
@@ -50,67 +47,26 @@ a{
 }
 
 /* Menu */
-.navaccueil{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-family: helvetica;
-    z-index: 1;
-    top: 0;
+.navbar{
+    position: fixed;
 }
 
-.navaccueil ul{
-    display: flex;
-    justify-content: center;
-    padding: 0;
+.navbar-brand:hover {
+    background: black;
 }
-
-.navaccueil li:hover .navspecific{
-    background-color:rgb(47, 54, 64);
-    color: rgb(0, 168, 255);
-}
-
-.navspecific{
-    background-color: rgb(113, 128, 147);
-    display: block;
-    width: 90px;
-    text-align: center;
-    padding: 5px 10px 5px 10px;
-    border-radius: 0px 0px 10px 10px;
-    transition:all 0.5s;
-}
-
-.navspecific:hover{
-    padding-top: 15px;
-}
-
-.navaccueil a{
-    color: white;
-}
-
 /* fin Menu */
 
 /*              Accueil           */
 
 #blocdescription{
+    margin-left: auto;
+    margin-right: auto;
     height: 70vh;
-    border: 12px solid rgb(113, 128, 147);
-    -webkit-border-end: 0px;    /* effacement bordure droite sur chrome,mobile... cad sur navigateurs où custom scrollbar existe */
     min-width: 140px;
     width: 60%;
     text-align: justify;
     overflow-y: scroll;
     padding-left:5px;
-}
-
-#blocdescription::-webkit-scrollbar{
-    width: 12px;
-    background-color: rgb(113, 128, 147);
-}
-
-#blocdescription::-webkit-scrollbar-thumb {
-    background-color:rgb(47, 54, 64);
 }
 
 #description{
@@ -149,7 +105,6 @@ a{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: rgb(113, 128, 147);
     width : 60%;
     border-radius: 55px;
 }
