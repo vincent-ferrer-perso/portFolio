@@ -73,6 +73,20 @@ a{
     padding-left:5px;
 }
 
+#section1 .titre {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    width: 40%;
+
+}
+
+#section1 .titre {
+    background-color: rgba(23,162,184,0.4); /* bg-info color + opacity */
+}
+
 #description{
     padding-right: 3%;
     margin-left: 20px;
