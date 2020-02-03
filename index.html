@@ -12,21 +12,33 @@
     <script src="JS/script.js"></script>
     <script src="JS/swapcss.js"></script>
 </head>
-<nav class="navbar-dark bg-info position-fixed text-center">
-    <a title="LienAccueil" class="navbar-brand bg-info text-white" href="#section1" onclick="goToS1()">Accueil</a>
-    <a title="LienFormulaire" class="navbar-brand bg-info text-white" href="#section2" onclick="goToS2()">Formulaire</a>
-    <a title="LienUtiles" class="navbar-brand bg-info text-white" href="#section3" onclick="goToS3()">Contact</a>
-</nav>
 <body>
+<nav class="navbar navbar-expand-md position-fixed flex-column navbar-dark bg-info">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav flex-column mr-auto text-center">
+            <li class="nav-item active">
+                <a class="nav-link" href="#section1" onclick="goToS1()">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2" onclick="goToS2()">Formulaire</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3" onclick="goToS3()">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <section class="section" id="section1">
     <div class="blocprincipal">
         <h1 class="titre">Vincent FERRER</h1>
         <div id=blocdescription class="bg-info">
             <figure>
-                <img id="photoprofil" src="Documents/profil.png" alt="">
+                <img id="photoprofil" src="Documents/profil.png" alt="" />
             </figure>
             <div id="description">
-                Je me présente, Vincent Ferrer, étudiant de première année du DUT Informatique du Site Aix-en-Provence de l'academie d'AIx-Marseille. Je suis né le 3 juin 1999 dans le 12ème arrondissement de Marseille et vit aujourd'hui à Salon-de-Provence.<br>
                 <div id="CompetenceDiplome">
                     <h2 class="titre2">Diplômes</h2>
                     <strong>Novembre 2017 </strong> Obtention du Permis de conduire<br>
@@ -82,6 +94,6 @@
         </p>
     </div>
 </section>
-<img src="Documents/fleche.png" id="flecheHautPage" onclick="goToS1()"></img>
+<img src="Documents/fleche.png" id="flecheHautPage" onclick="goToS1()" alt="" />
 </body>
 </html>

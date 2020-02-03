@@ -1,19 +1,13 @@
 /*              Toutes les pages            */
 
-body{
-    background-color: rgba(107, 110, 122, 0.384);
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+nav {
+    width: 120px;
+    right: 0;
+    margin-top: 50vh;            /* alignement */
+    transform: translateY(-50%); /*  vertical  */
 }
 
-nav {
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    width: 120px;
-}
+
 
 .navbar-brand {
     margin-right: 0px;
@@ -29,10 +23,6 @@ nav {
 }
 #section2{
     background-color: red;
-}
-
-#titreformulaire {
-    margin-top: 30px;
 }
 
 #section3{
@@ -55,6 +45,7 @@ nav {
 
 #flecheHautPage {
     display: none;
+    opacity: 0.8;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -80,7 +71,6 @@ a{
     min-width: 140px;
     width: 60%;
     text-align: justify;
-    overflow-y: scroll;
     padding-left:5px;
 }
 
@@ -91,10 +81,6 @@ a{
     text-align: center;
     border-radius: 20px;
     width: 40%;
-
-}
-
-#section1 .titre {
     background-color: rgba(23,162,184,0.4); /* bg-info color + opacity */
 }
 
@@ -119,9 +105,10 @@ a{
 }
 
 #photoprofil {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    float: left;
-    right: 15px;
+    left: 0;
     border-radius: 15px;
     width: 19%;
     min-width: 50px;
@@ -191,4 +178,14 @@ textarea::-moz-placeholder{     /* Mozilla Firefox */
 #soumettre:active{
     background:rgb(85, 85, 85);
     color:white;
+}
+
+@media (max-width: 767px) {
+    nav{
+        top: 0;
+        right: 0;
+        width: 100px;
+        margin-top: 0;
+        transform: translateY(0);
+    }
 }
