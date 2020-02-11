@@ -1,25 +1,41 @@
-function goToS1() {
-    $('html, body').animate({
-        scrollTop: $("#section1").offset().top
-    }, 800);
-}
-
-function goToS2() {
-    $('html, body').animate({ scrollTop: $("#section2").offset().top }, 800);
-}
-
-function goToS3() {
-    $('html, body').animate({
-        scrollTop: $("#section3").offset().top
-    }, 800);
+function goToSection(numSection) {
+    id = '#section'+numSection;
+    $('html, body').animate({ scrollTop: $(id).offset().top }, 800);
 }
 
 
 function apparaitreFormulaire() {
 
     setTimeout(function(){
-        $('#section2 .blocprincipal form').fadeIn(0).animate({width:"+=60%"},800);
+        $('#section4 .blocprincipal form').fadeIn(0).animate({width:"+=60%"},800);
     }, 500 );
+}
+
+
+function showDivCompetences(id) {
+    $("#blocCompetence div").css("display", "none");
+    id = '#'+id;
+    $(id).css("display", 'block');
+}
+
+function showDivCompetencesPrecise(idParent, id) {
+    idParent = '#'+idParent+' div';
+    $(idParent).css("display", "none");
+    id = '#'+id;
+    $(id).css("display", 'block');
+}
+
+function showDivExperiences(id) {
+    $("#blocExperience div").css("display", "none");
+    id = '#'+id;
+    $(id).css("display", 'block');
+}
+
+function showDivExperiencesPrecise(idParent, id) {
+    idParent = '#'+idParent+' div';
+    $(idParent).css("display", "none");
+    id = '#'+id;
+    $(id).css("display", 'block');
 }
 
 (function () {
@@ -35,7 +51,7 @@ function apparaitreFormulaire() {
                 // Sinon enlève le bouton
                 $('#flecheHautPage').fadeOut(10);
             }
-            if(jQuery(this).scrollTop() >= 500){
+            if(jQuery(this).scrollTop() >= 1500){
                 apparaitreFormulaire();
             }
         });

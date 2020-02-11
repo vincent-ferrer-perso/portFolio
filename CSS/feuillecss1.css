@@ -7,25 +7,28 @@ nav {
     transform: translateY(-50%); /*  vertical  */
 }
 
-
-
-.navbar-brand {
-    margin-right: 0px;
-}
-
 .section{
     height: 100vh;
     width: 100%;
 }
 
-#section1{
+#section1 {
     background-image: url("../Documents/fond1.jpg");
 }
-#section2{
+
+#section2 {
+    background-color: darkblue;
+}
+
+#section3 {
+    background-color: darkseagreen;
+}
+
+#section4 {
     background-color: red;
 }
 
-#section3{
+#section5 {
     background-color: yellow;
 }
 
@@ -113,6 +116,104 @@ a{
     width: 19%;
     min-width: 50px;
     max-width: 100px;
+}
+
+
+/*              Compétence            */
+#blocCompetence{
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    min-width: 140px;
+    width: 60%;
+    text-align: justify;
+    padding-left:5px;
+}
+
+ #GeneralGestion, #GeneralAutre {
+     display: none;
+ }
+
+#section2 .titre {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    width: 40%;
+    background-color: rgba(23,162,184,0.4); /* bg-info color + opacity */
+}
+
+#navCompetence {
+    width: 120px;
+    left: 0;
+    margin-top: 50vh;            /* alignement */
+    transform: translateY(-50%); /*  vertical  */
+}
+
+#navCompetencePrecise {
+    position: relative;
+    width: auto;
+    right: auto;
+    margin-top: 0;            /* alignement */
+    transform: translateY(0%); /*  vertical  */
+}
+
+#DUT {
+    display: none;
+}
+
+#Polytech {
+    display: none;
+}
+
+
+/*              Compétence            */
+#blocExperience{
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    min-width: 140px;
+    width: 60%;
+    text-align: justify;
+    padding-left:5px;
+}
+
+#EGeneralGestion, #EGeneralAutre {
+    display: none;
+}
+
+#section3 .titre {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    width: 40%;
+    background-color: rgba(23,162,184,0.4); /* bg-info color + opacity */
+}
+
+#EnavCompetence {
+    width: 120px;
+    left: 0;
+    margin-top: 50vh;            /* alignement */
+    transform: translateY(-50%); /*  vertical  */
+}
+
+#EnavCompetencePrecise {
+    position: relative;
+    width: auto;
+    right: auto;
+    margin-top: 0;            /* alignement */
+    transform: translateY(0%); /*  vertical  */
+}
+
+#EDUT {
+    display: none;
+}
+
+#EPolytech {
+    display: none;
 }
 
 /*              Formulaire            */
