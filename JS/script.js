@@ -55,5 +55,15 @@ function showDivExperiencesPrecise(idParent, id) {
                 apparaitreFormulaire();
             }
         });
+
+
+        if (document.body.clientWidth < 1174) { // pas dynamique obligé de recharger pour appliquer le changement
+            $('#section1 .titre').firstChild.remove();
+            $('#section1 .titre').html(
+                '<img id="photoProfil" src="Documents/profil_RC.png" alt="" />' +
+                'VINCENT FERERR'
+            );
+
+        }
     });
 })();

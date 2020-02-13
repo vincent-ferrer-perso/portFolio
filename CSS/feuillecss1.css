@@ -85,6 +85,17 @@ a{
     border-radius: 20px;
     width: 40%;
     background-color: rgba(23,162,184,0.4); /* bg-info color + opacity */
+    line-height: initial;
+}
+
+#section1 .titre::before, #section1 .titre::after {
+    content: url('../Documents/profil_RC.png');
+}
+
+#photoProfil {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
 }
 
 #description{
@@ -105,17 +116,6 @@ a{
     margin-top: 0px;
     margin-left: 30px;
     margin-bottom: 2px;
-}
-
-#photoprofil {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 0;
-    border-radius: 15px;
-    width: 19%;
-    min-width: 50px;
-    max-width: 100px;
 }
 
 
@@ -289,4 +289,14 @@ textarea::-moz-placeholder{     /* Mozilla Firefox */
         margin-top: 0;
         transform: translateY(0);
     }
+
+    #section1 .titre::before, #section1 .titre::after {
+        display: none;
+    }
+
+    #iconeNavMobile {
+        width: 100%;
+        position: relative;
+    }
+
 }
